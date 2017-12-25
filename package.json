@@ -3,9 +3,16 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
-    "coffeescript": "1.12.7"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.9.7"
-  }
+    "webpack-dev-server": "^2.9.7",
+    "babel-eslint": "^8.1.1",
+    "coffeescript": "1.12.7",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-prettier": "^2.4.0",
+    "prettier": "^1.9.2",
+  },
 }
