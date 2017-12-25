@@ -5,5 +5,8 @@
     <a href="#acces" class="item"><%= t 'pages.home.access' %></a>
     <a href="#testimonials" class="item"><%= t 'pages.home.testimonials' %></a>
   <% end %>
+  <%= c("banner") do %>
+    <%= c("carousel") %>
+  <% end %>
   <p>Hello from our first component!</p>
 <% end %>
