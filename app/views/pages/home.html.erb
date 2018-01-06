@@ -5,14 +5,17 @@
     <a href="#acces" class="item"><%= t 'pages.home.access' %></a>
     <a href="#testimonials" class="item"><%= t 'pages.home.testimonials' %></a>
   <% end %>
-  <%= c("banner") do %>
-    <%= c("carousel") %>
-  <% end %>
+
+  <%= c("banner") %>
 
   <% @sections.each do |section| %>
-    <h1><%= section.title %></h1>
-    <% section.text.lines.each do |line| %>
-      <p><%= line %></p>
+    <%= c("section") do %>
+      <%= c("wrapper") do %>
+        <h1><%= section.title %></h1>
+        <% section.text.lines.each do |line| %>
+          <p><%= line %></p>
+        <% end %>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>

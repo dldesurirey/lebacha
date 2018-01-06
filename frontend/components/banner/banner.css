@@ -1,0 +1,10 @@
+.banner {
+  padding: 26px 76px;
+  color: white;
+  text-align: center;
+  height: calc(100vh - 76px);
+  background-image: url("./images/bacha.jpg");
+  background-size: cover !important;
+  display: flex;
+  align-items: flex-end;
+}
