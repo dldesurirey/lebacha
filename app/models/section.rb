@@ -13,6 +13,8 @@
 class Section < ApplicationRecord
   default_scope { order(position: :asc) }
 
+  has_attachments :photos, accept: [:jpg, :jpeg, :png]
+
   validates :title, presence: true, length: { minimum: 2 }
 
   after_validation :set_position, if: :position_undefined?
