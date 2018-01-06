@@ -2,3 +2,8 @@
   height: 76px;
   background-color: white;
 }
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 28px;
+}
