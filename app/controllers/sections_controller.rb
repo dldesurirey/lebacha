@@ -24,7 +24,7 @@ class SectionsController < ApplicationController
     @section = Section.new(section_params)
 
     if @section.save
-      redirect_to @section, notice: 'Section was successfully created.'
+      redirect_to @section, notice: 'Section crée avec succès.'
     else
       render :new
     end
@@ -33,7 +33,7 @@ class SectionsController < ApplicationController
   # PATCH/PUT /sections/1
   def update
     if @section.update(section_params)
-      redirect_to @section, notice: 'Section was successfully updated.'
+      redirect_to @section, notice: 'Section mise à jour.'
     else
       render :edit
     end
@@ -42,7 +42,7 @@ class SectionsController < ApplicationController
   # DELETE /sections/1
   def destroy
     @section.destroy
-    redirect_to sections_url, notice: 'Section was successfully destroyed.'
+    redirect_to sections_url, notice: 'Section supprimée.'
   end
 
   private
@@ -53,6 +53,6 @@ class SectionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def section_params
-      params.require(:section).permit(:title, :text, :position)
+      params.require(:section).permit(:title, :text, :position, photos: [])
     end
 end

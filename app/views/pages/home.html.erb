@@ -8,5 +8,11 @@
   <%= c("banner") do %>
     <%= c("carousel") %>
   <% end %>
-  <p>Hello from our first component!</p>
+
+  <% @sections.each do |section| %>
+    <h1><%= section.title %></h1>
+    <% section.text.lines.each do |line| %>
+      <p><%= line %></p>
+    <% end %>
+  <% end %>
 <% end %>
