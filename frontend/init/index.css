@@ -10,3 +10,16 @@ body {
 h1 {
   font-family: 'Abril Fatface', cursive;
 }
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #ceaa75;
+  border-radius: 0px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #dbbc8f;
+}
