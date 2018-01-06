@@ -1,5 +1,5 @@
 .section:nth-of-type(odd) {
-  background: white;
+  background: #fafbfc;
 }
 .section:nth-of-type(even) {
   background-color: #f7f5f2;

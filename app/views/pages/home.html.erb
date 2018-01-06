@@ -1,15 +1,14 @@
 <%= c("page") do %>
   <%= c("navbar") do %>
-    <a href="#comodoties" class="item"><%= t 'pages.home.comodoties' %></a>
-    <a href="#around" class="item"><%= t 'pages.home.around' %></a>
-    <a href="#acces" class="item"><%= t 'pages.home.access' %></a>
-    <a href="#testimonials" class="item"><%= t 'pages.home.testimonials' %></a>
+    <% @sections.each do |section| %>
+      <a href="#s<%= section.id %>" class="item"><%= section.title %></a>
+    <% end %>
   <% end %>
 
   <%= c("banner") %>
 
   <% @sections.each do |section| %>
-    <%= c("section") do %>
+    <%= c("section", id: "s#{section.id}") do %>
       <%= c("wrapper") do %>
         <h1><%= section.title %></h1>
         <% section.text.lines.each do |line| %>
