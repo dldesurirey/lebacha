@@ -1,14 +1,24 @@
 [data-scrolldir="down"] .galery {
-  top: 0;
+  top: 12px;
 }
 [data-scrolldir="up"] .galery {
-  top: 80px;
+  top: 88px;
 }
 
 .galery {
   position: sticky;
-  top: 0;
+  display: flex;
+  justify-content: center;
   transition: all .3s ease;
+}
+.thumb {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+.thumb:hover {
+  transform: scale(1.05);
 }
 
 .lightbox .lb-outerContainer {

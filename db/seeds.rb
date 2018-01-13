@@ -72,8 +72,9 @@ section_params = [
 Section.create!(section_params)
 
 urls = [
-'http://img.clubic.com/08254724-photo-xbox-console.jpg',
-'http://compass.xbox.com/assets/a5/d3/a5d3e0e4-38fd-42ab-90f4-e7b5112af4d1.png'
+'https://chaletbachal.files.wordpress.com/2013/12/p10200931.jpg?w=2400',
+'https://chaletbachal.files.wordpress.com/2013/12/p1010979.jpg?w=2400',
+'https://chaletbachal.files.wordpress.com/2013/12/p1020051.jpg?w=1400'
 ]
 
 Section.find_each do |section|
