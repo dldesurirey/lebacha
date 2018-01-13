@@ -9,12 +9,21 @@
 
   <% @sections.each do |section| %>
     <%= c("section", id: "s#{section.id}") do %>
-      <%= c("wrapper") do %>
+      <div class="col-xs-12 col-sm-10">
         <h1><%= section.title %></h1>
+      </div>
+      <div class="col-xs-10 col-sm-5">
         <% section.text.lines.each do |line| %>
           <p><%= line %></p>
         <% end %>
-      <% end %>
+      </div>
+      <div class="col-xs-10 col-sm-5">
+        <div class="galery">
+          <% section.photos.each do |photo| %>
+            <%= cl_image_tag photo.path, width: 200, crop: :fill %>
+          <% end %>
+        </div>
+      </div>
     <% end %>
   <% end %>
 <% end %>

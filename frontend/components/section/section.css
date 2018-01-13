@@ -1,6 +1,13 @@
+.section {
+  padding: 66px 0;
+}
 .section:nth-of-type(odd) {
   background: #fafbfc;
 }
 .section:nth-of-type(even) {
   background-color: #f7f5f2;
+}
+.galery {
+  position: sticky;
+  top: 0;
 }

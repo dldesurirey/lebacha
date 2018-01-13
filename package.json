@@ -5,7 +5,8 @@
     "@rails/webpacker": "^3.2.0",
     "normalize.css": "^7.0.0",
     "postcss-nested": "^3.0.0",
-    "rails-ujs": "^5.1.4"
+    "rails-ujs": "^5.1.4",
+    "scrolldir": "^1.2.18"
   },
   "devDependencies": {
     "babel-eslint": "^8.1.1",

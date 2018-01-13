@@ -61,4 +61,13 @@ section_params = [
 
 Section.create!(section_params)
 
+urls = [
+'http://img.clubic.com/08254724-photo-xbox-console.jpg',
+'http://compass.xbox.com/assets/a5/d3/a5d3e0e4-38fd-42ab-90f4-e7b5112af4d1.png'
+]
+
+Section.find_each do |section|
+  section.photo_urls = urls
+end
+
 puts "#{Section.count} sections created"

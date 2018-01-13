@@ -1,3 +1,12 @@
+[data-scrolldir="down"] .navbar {
+  top: -76px;
+  left: 0;
+}
+[data-scrolldir="up"] .navbar {
+  top: 0;
+  left: 0;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -9,6 +18,8 @@
   justify-content: space-between;
   background-color: white;
   color: #666;
+  z-index: 1000;
+  transition: all .3s ease;
 }
 
 .left {
