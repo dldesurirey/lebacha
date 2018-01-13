@@ -1,0 +1,10 @@
+.features {
+  columns: 3;
+  margin-top: 76px;
+}
+
+li:before {
+  content: '✔';
+  margin-right: 16px;
+  color: #ceaa75;
+}

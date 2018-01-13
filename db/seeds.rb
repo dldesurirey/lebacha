@@ -1,7 +1,16 @@
 Section.destroy_all
 Testimonial.destroy_all
+Feature.destroy_all
 
 section_params = [
+  {
+    title: "Bienvenue au Bacha",
+    text: "Idéal pour les amoureux de la nature pour lesquels vacances riment avec confort, sport, détente et grands espaces.
+
+          La vallée de la Clarée est réputée pour sa beauté, sa pureté, son ensoleillement, son enneigement et ses activités de pleine nature.
+
+          Attention, on tombe facilement sous la charme de cette vallée secrète !",
+  },
   {
     title: "Le duplex",
     text: "Si vous aimez le charme de l’ancien, la nature, l’espace et le calme et que vous tenez à votre confort, ce grand duplex de 160 m² est fait pour vous. Il est aménagé sur deux niveaux dans un grand chalet ancien, l’autre partie étant restée « dans son jus ».
@@ -68,8 +77,62 @@ urls = [
 ]
 
 Section.find_each do |section|
+  next if section.position == 1
   section.photo_urls = urls
 end
+
+##########################################################################################
+
+feature_params = [
+  {
+    section: Section.first,
+    text: "Jardin"
+  },
+  {
+    section: Section.first,
+    text: "Wi-Fi inclus"
+  },
+  {
+    section: Section.first,
+    text: "TV LED"
+  },
+  {
+    section: Section.first,
+    text: "Barbecue"
+  },
+  {
+    section: Section.first,
+    text: "Poêle à bois"
+  },
+  {
+    section: Section.first,
+    text: "Grands espaces de vie"
+  },
+  {
+    section: Section.first,
+    text: "Tout le confort moderne"
+  },
+  {
+    section: Section.first,
+    text: "Charme d'un ancien chalet"
+  },
+  {
+    section: Section.all[1],
+    text: "4 chambres dont une suite"
+  },
+  {
+    section: Section.all[1],
+    text: "10 couchages"
+  },
+  {
+    section: Section.all[1],
+    text: "2 Salles de bain"
+  },
+]
+
+Feature.create!(feature_params)
+
+##########################################################################################
 
 testimonial_params = [
   {
@@ -121,4 +184,5 @@ testimonial_params = [
 Testimonial.create!(testimonial_params)
 
 puts "#{Section.count} sections created"
+puts "#{Feature.count} features created"
 puts "#{Testimonial.count} testimonials created"

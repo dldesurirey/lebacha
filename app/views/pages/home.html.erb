@@ -13,14 +13,19 @@
       <div class="col-xs-10 col-sm-10">
         <h2 class="h1"><%= section.title %></h2>
       </div>
-      <div class="col-xs-10 col-sm-5">
+      <div class="col-xs-10 col-md-5">
         <% section.text.lines.each do |line| %>
           <p><%= line %></p>
         <% end %>
       </div>
-      <div class="col-xs-10 col-sm-5">
-        <%= c("galery", photos: section.photos, id: "g#{section.id}", thumbs: true) %>
+      <div class="col-xs-10 col-md-5">
+        <% if section.photos.any? %>
+          <%= c("galery", photos: section.photos, id: "g#{section.id}", thumbs: true) %>
+        <% end %>
       </div>
+      <% if section.features.any? %>
+        <%= c("features", features: section.features) %>
+      <% end %>
     <% end %>
   <% end %>
 

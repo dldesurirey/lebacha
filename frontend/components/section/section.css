@@ -1,5 +1,5 @@
 .section {
-  padding: 76px 0;
+  padding: 100px 0;
 }
 .section:nth-of-type(odd) {
   background: #fafbfc;
@@ -10,8 +10,4 @@
 
 .section .h1 {
   margin-bottom: 52px;
-}
-
-:target {
-  padding-top: 100px;
 }

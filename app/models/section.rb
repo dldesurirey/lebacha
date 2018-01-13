@@ -13,6 +13,7 @@
 class Section < ApplicationRecord
   default_scope { order(position: :asc) }
 
+  has_many :features, dependent: :destroy
   has_attachments :photos, accept: [:jpg, :jpeg, :png]
 
   validates :title, presence: true, length: { minimum: 2 }
