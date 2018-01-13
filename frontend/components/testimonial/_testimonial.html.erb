@@ -1,0 +1,12 @@
+<div class="col-xs-10 col-md-8">
+  <div class="testimonial">
+    <blockquote class="blockquote">
+      <% testi.content.lines.each do |line| %>
+        <p><%= line %></p>
+      <% end %>
+      <footer class="blockquote-footer">
+        <%= testi.name %>, <cite title="Source Title"><%= l testi.date, format: :long %></cite>
+      </footer>
+    </blockquote>
+  </div>
+</div>

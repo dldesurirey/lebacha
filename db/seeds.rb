@@ -1,4 +1,5 @@
 Section.destroy_all
+Testimonial.destroy_all
 
 section_params = [
   {
@@ -70,4 +71,54 @@ Section.find_each do |section|
   section.photo_urls = urls
 end
 
+testimonial_params = [
+  {
+    name: "Brigitte, Anne, Véro, Cathy, Bruno, Pierre B., Pierre R. & Jean Marc",
+    content: "Nous voici de retour à Montpellier après avoir passé une semaine formidable dans votre chalet le bacha.
+
+            Nous avons eu une semaine ensoleillée qui nous a permis de randonner tous les jours avec la cerise  sur le gâteau le  dernier jour par l’ascension du mont Thabor.
+
+            Nous tenons à vous signaler également que nous avons apprécié le chalet, nous l’avons trouvé bien agencé, très convivial avec sa grande pièce à vivre où nous prenions nos petits déjeuners et repas du soir : tout y était !!! ",
+    date: Date.parse('31/07/2016'),
+  },
+  {
+    name: "Nicolas",
+    content: "Ce séjour s’est très bien passé… neige et soleil étaient là.
+
+            Le choix que j’ai fait de votre maison a été parfait. Remerciez Chloé Guellerin pour son efficacité et sa gentillesse
+
+            A Bientôt peut être pour un autre séjour.",
+    date: Date.parse('16/03/2017'),
+  },
+  {
+    name: "Christine",
+    content: "Nous avons à nouveau passé un excellent séjour dans votre chalet. Nous découvrons toujours de nouvelles randonnées, activités et bonnes adresses dans la merveilleuse vallée de la Clarée. Votre chalet est vraiment parfait, nous apprécions sa situation, sa taille (nous étions très à l’aise à 9), son charme et la magnifique vue. Il est très bien équipé.  Le jardin est très agréable, au calme, privatif, et avec une vue fantastique!",
+    date: Date.parse('10/08/2017'),
+  },
+  {
+    name: "Damien",
+    content: "Chalet très très agréable, bien installé et paysage superbe
+              Merci bcp",
+    date: Date.parse('11/08/2014'),
+  },
+  {
+    name: "Christine",
+    content: "Nous avons passé un excellent séjour dans votre chalet qui est vraiment très agréable. Nous espérons pouvoir y retourner dans le futur. ",
+    date: Date.parse('15/08/2015'),
+  },
+  {
+    name: "Sebastien",
+    content: "Nous avons passé une merveilleuse semaine. Nous retenons l’adresse pour l’année prochaine !",
+    date: Date.parse('30/03/2015'),
+  },
+  {
+    name: "Rolland & Mireille",
+    content: " La maison est toujours aussi agréable, la nouvelle terrasse bien pratique, et nous avons inauguré le barbecue !",
+    date: Date.parse('14/06/2016'),
+  }
+]
+
+Testimonial.create!(testimonial_params)
+
 puts "#{Section.count} sections created"
+puts "#{Testimonial.count} testimonials created"
