@@ -18,16 +18,8 @@
         <% end %>
       </div>
       <div class="col-xs-10 col-sm-5">
-        <div class="galery" data-carousel="carousel<%= section.id %>">
-          <% section.photos.each do |photo| %>
-            <%= cl_image_tag photo.path, width: 200, crop: :fill %>
-          <% end %>
-        </div>
+        <%= c("galery", photos: section.photos, id: "g#{section.id}" ) %>
       </div>
     <% end %>
   <% end %>
-<% end %>
-
-<% @sections.each do |section| %>
-  <%= c("carousel", photos: section.photos, id: "carousel#{section.id}") %>
 <% end %>

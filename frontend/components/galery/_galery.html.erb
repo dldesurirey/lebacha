@@ -1,0 +1,9 @@
+<div class="galery">
+  <% counter = 0 %>
+  <% photos.each do |photo| %>
+    <% counter += 1 %>
+    <a href="<%= cl_image_path photo.path %>" data-lightbox="<%= id %>">
+      <%= cl_image_tag photo.path, width: 250, crop: :fill %>
+    </a>
+  <% end %>
+</div>

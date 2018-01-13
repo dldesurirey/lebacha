@@ -1,0 +1,12 @@
+[data-scrolldir="down"] .galery {
+  top: 0;
+}
+[data-scrolldir="up"] .galery {
+  top: 80px;
+}
+
+.galery {
+  position: sticky;
+  top: 0;
+  transition: all .3s ease;
+}
