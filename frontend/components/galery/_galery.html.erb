@@ -2,8 +2,23 @@
   <% counter = 0 %>
   <% photos.each do |photo| %>
     <% counter += 1 %>
-    <a href="<%= cl_image_path photo.path %>" data-lightbox="<%= id %>">
-      <%= cl_image_tag photo.path, width: 250, crop: :fill %>
+    <% classname = '' %>
+    <% if !thumbs && counter == 1 %>
+      <% classname = 'btn btn-primary' %>
+    <% elsif !thumbs && counter > 1 %>
+      <% classname = 'hidden' %>
+    <% end %>
+
+    <a
+      href="<%= cl_image_path photo.path %>"
+      data-lightbox="<%= id %>"
+      class="<%= classname %>"
+    >
+      <% if !thumbs && counter == 1  %>
+        Voir les photos
+      <% elsif thumbs %>
+        <%= cl_image_tag photo.path, width: 250, crop: :fill %>
+      <% end %>
     </a>
   <% end %>
 </div>

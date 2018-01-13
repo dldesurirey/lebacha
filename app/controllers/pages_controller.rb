@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
     @sections = Section.all
+    @photos = @sections.collect(&:photos).flatten
   end
 end

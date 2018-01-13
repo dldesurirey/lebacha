@@ -11,6 +11,10 @@ h1 {
   font-family: 'Abril Fatface', cursive;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .btn-primary {
   padding: 12px 24px;
   background-color: #ceaa75;
