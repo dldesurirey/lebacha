@@ -70,7 +70,7 @@ section_params = [
           En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
   },
   {
-    title: "Tarrif & disponibilités",
+    title: "Tarif & disponibilités",
     text: "<h3>Automne/hiver</h3>
 
           <ul class='intext'>
@@ -154,6 +154,26 @@ feature_params = [
     text: "Charme d'un ancien chalet"
   },
   {
+    section: Section.first,
+    text: "Animaux acceptés"
+  },
+  {
+    section: Section.first,
+    text: "Calme & Tranquilité"
+  },
+  {
+    section: Section.first,
+    text: "Au coeur du village"
+  },
+  {
+    section: Section.first,
+    text: "Proche des comodités"
+  },
+  {
+    section: Section.first,
+    text: "À 20' des stations"
+  },
+  {
     section: Section.all[1],
     text: "160m²"
   },
@@ -168,6 +188,166 @@ feature_params = [
   {
     section: Section.all[1],
     text: "2 Salles de bain"
+  },
+  {
+    section: Section.all[1],
+    text: "Jardin"
+  },
+  {
+    section: Section.all[1],
+    text: "Poêle à bois"
+  },
+  {
+    section: Section.all[1],
+    text: "Terrasse"
+  },
+  {
+    section: Section.all[1],
+    text: "Balcon"
+  },
+  {
+    section: Section.all[1],
+    text: "Casier à Skis"
+  },
+  {
+    section: Section.all[1],
+    text: "Livres"
+  },
+  {
+    section: Section.all[1],
+    text: "Jeux pour tous âges"
+  },
+  {
+    section: Section.all[1],
+    text: "Wi-Fi inclus"
+  },
+  {
+    section: Section.all[1],
+    text: "TV LED"
+  },
+  {
+    section: Section.all[1],
+    text: "Lecteur DVD"
+  },
+  {
+    section: Section.all[1],
+    text: "Vidéothèque"
+  },
+  {
+    section: Section.all[1],
+    text: "Cuisine équipée"
+  },
+  {
+    section: Section.all[1],
+    text: "Réfrigérateur"
+  },
+  {
+    section: Section.all[1],
+    text: "Congélateur"
+  },
+  {
+    section: Section.all[1],
+    text: "Lave-vaisselle"
+  },
+  {
+    section: Section.all[1],
+    text: "Four"
+  },
+  {
+    section: Section.all[1],
+    text: "Four micro-ondes"
+  },
+  {
+    section: Section.all[1],
+    text: "Barbecue"
+  },
+  {
+    section: Section.all[1],
+    text: "Aspirateur"
+  },
+  {
+    section: Section.all[1],
+    text: "Bouilloire"
+  },
+  {
+    section: Section.all[1],
+    text: "Toaster"
+  },
+  {
+    section: Section.all[1],
+    text: "Lave-linge"
+  },
+  {
+    section: Section.all[1],
+    text: "Mixeur"
+  },
+  {
+    section: Section.all[1],
+    text: "Machine à café"
+  },
+  {
+    section: Section.all[1],
+    text: "Cuisine équipée"
+  },
+  {
+    section: Section.all[1],
+    text: "Sèche-cheveux"
+  },
+  {
+    section: Section.all[-3],
+    text: "Ski alpin"
+  },
+  {
+    section: Section.all[-3],
+    text: "Ski de randonnée"
+  },
+  {
+    section: Section.all[-3],
+    text: "Ski de fond"
+  },
+  {
+    section: Section.all[-3],
+    text: "Promenade en raquettes"
+  },
+  {
+    section: Section.all[-3],
+    text: "Traîneaux à chien"
+  },
+  {
+    section: Section.all[-3],
+    text: "Randonnée"
+  },
+  {
+    section: Section.all[-3],
+    text: "VTT"
+  },
+  {
+    section: Section.all[-3],
+    text: "Alpinisme"
+  },
+  {
+    section: Section.all[-3],
+    text: "Sports d'eaux-vives"
+  },
+  {
+    section: Section.all[-3],
+    text: "2 Spas"
+  },
+  {
+    section: Section.all[-3],
+    text: "Piscine naturelle"
+  },
+  {
+    section: Section.all[-3],
+    text: "Marchés"
+  },
+  {
+    section: Section.all[-3],
+    text: "30' de Serre chevalier"
+  },
+  {
+    section: Section.all[-3],
+    text: "20' de Montgenèvre"
   },
 ]
 
