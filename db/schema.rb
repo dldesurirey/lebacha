@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180113201830) do
+ActiveRecord::Schema.define(version: 20180113232737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(version: 20180113201830) do
     t.datetime "updated_at", null: false
     t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
     t.index ["attachinariable_type", "attachinariable_id"], name: "index_attachinariable"
+  end
+
+  create_table "booking_requests", force: :cascade do |t|
+    t.string "email"
+    t.date "start_date"
+    t.date "end_date"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "captcha"
   end
 
   create_table "features", force: :cascade do |t|

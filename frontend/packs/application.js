@@ -8,6 +8,7 @@ import "components/galery/galery";
 import "components/testimonial/testimonial";
 import "components/feature/feature";
 import "components/features/features";
+import "components/booking/booking";
 
 import Rails from "rails-ujs";
 

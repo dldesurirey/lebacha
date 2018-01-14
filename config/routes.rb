@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  resources :sections
-  devise_for :admins
   root to: "pages#home"
+
+  resources :sections
+
+  resources :booking_requests, only: :create
+
+  devise_for :admins
   mount Attachinary::Engine => "/attachinary"
 end

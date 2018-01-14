@@ -1,0 +1,25 @@
+.booking {
+  position: absolute;
+  right: calc((100vw - 1100px) / 2);
+  margin-top: -160px;
+  padding: 20px 16px 30px 16px;
+  background-color: white;
+  border-radius: 4px;
+  width: 450px;
+  z-index: 2;
+}
+
+.booking h2 {
+  margin-bottom: 30px;
+}
+
+.booking .form-inline .form-control {
+  width: 175px;
+}
+
+.has-danger {
+  color: #DA3849;
+}
+.has-danger input {
+  border: 1px solid #DA3849;
+}

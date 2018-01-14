@@ -18,7 +18,7 @@ a:hover {
 .btn-primary {
   padding: 12px 24px;
   background-color: #ceaa75;
-  border-radius: 0px;
+  border-radius: 4px;
   font-size: 18px;
   border: none;
   cursor: pointer;
@@ -26,4 +26,12 @@ a:hover {
 
 .btn-primary:hover {
   background-color: #dbbc8f;
+}
+
+.alert {
+  position: fixed;
+  right: 1rem;
+  top: 0.7rem;
+  padding-right: 50px;
+  z-index: 1050;
 }
