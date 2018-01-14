@@ -4,7 +4,7 @@
   color: white;
   text-align: center;
   height: calc(100vh - 76px);
-  background-image: linear-gradient(0deg, rgba(250, 251, 252, 1) 0%, rgba(250, 251, 252, 0.5) 20%, transparent 50%), url("./images/bacha.jpg");
+  background-image: linear-gradient(0deg, rgba(250, 251, 252, 1) 0%, rgba(250, 251, 252, 0.5) 15%, transparent 40%), url("./images/bacha.jpg");
   background-size: cover !important;
   display: flex;
   align-items: flex-end;
