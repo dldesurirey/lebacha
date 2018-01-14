@@ -68,7 +68,7 @@ section_params = [
           En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
   },
   {
-    title: "Tarif & disponibilités",
+    title: "Tarifs & disponibilités",
     text: "<h3>Automne/hiver</h3>
 
           <ul class='intext'>
