@@ -9,6 +9,7 @@
   position: sticky;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   transition: all .3s ease;
 }
 .thumb {

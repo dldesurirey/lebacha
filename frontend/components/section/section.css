@@ -11,3 +11,20 @@
 .section .h1 {
   margin-bottom: 52px;
 }
+
+.section p {
+  color: #666;
+}
+
+.section p:empty {
+  display: none;
+}
+
+ul.intext {
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.btn.intext {
+  margin-top: 1rem;
+}

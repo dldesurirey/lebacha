@@ -1,6 +1,7 @@
 Section.destroy_all
 Testimonial.destroy_all
 Feature.destroy_all
+BookingRequest.destroy_all
 
 section_params = [
   {
@@ -35,7 +36,7 @@ section_params = [
   },
   {
     title: "Les alentours",
-    text: "En été :
+    text: "<h3>En été</h3>
 
           Vous pourrez pratiquer à Névache où dans les proches environs toutes les activités de montagne que vous aimez (marche, escalade, sports d’eaux-vives, alpinisme, VTT…).
 
@@ -53,7 +54,8 @@ section_params = [
 
           Enfin si vous aimez simplement le farniente, sachez que le climat de Névache  est très agréable : chaud au soleil, mais  frais à l’ombre et froid la nuit pour un sommeil réparateur.
 
-          En hiver :
+          <br>
+          <h3>En hiver</h3>
 
           45 km de pistes de ski nordique, promenade en raquettes, ski de randonnée, traîneaux à chien : vous aurez l’embarras du choix pour des sports d’hiver en pleine nature.
 
@@ -67,6 +69,39 @@ section_params = [
 
           En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
   },
+  {
+    title: "Tarrif & disponibilités",
+    text: "<h3>Automne/hiver</h3>
+
+          <ul class='intext'>
+            <li><strong>1 210€</strong> en haute saison (vacances scolaires Noël et hiver)</li>
+            <li><strong>910€</strong> en moyenne et basse saison</li>
+          </ul>
+
+          <h3>Printemps/Été</h3>
+
+          <ul class='intext'>
+            <li><strong>1 070€</strong> en haute saison (01 juillet au 19 août)</li>
+            <li><strong>810€</strong> en moyenne et basse saison</li>
+          </ul>
+
+          <h4>Modalités</h4>
+
+          <ul class='intext'>
+            <li>Taxe de séjour de 0.46€ par personne et par jour.</li>
+            <li>Accompte 20% à la réservation, le solde à l’arrivée.</li>
+            <li>Chèque de caution de 1 000€ demandé à l’arrivée (non encaissé).</li>
+          </ul>
+
+          <h4>Services</h4>
+
+          <ul class='intext'>
+            <li>Location de draps:  10€</li>
+            <li>Ménage de fin de séjour: 90€</li>
+          </ul>
+
+          <a class='btn btn-primary intext' target='_blank' href='http://locations-meubles.nevache-tourisme.fr/fr/rentals/46183-desurirey-laurence-le-bacha-a-ville-basse?guests=10'>Consulter les disponibilités</a>",
+  },
 ]
 
 Section.create!(section_params)
@@ -74,11 +109,12 @@ Section.create!(section_params)
 urls = [
 'https://chaletbachal.files.wordpress.com/2013/12/p10200931.jpg?w=2400',
 'https://chaletbachal.files.wordpress.com/2013/12/p1010979.jpg?w=2400',
-'https://chaletbachal.files.wordpress.com/2013/12/p1020051.jpg?w=1400'
+'https://chaletbachal.files.wordpress.com/2013/12/p1020051.jpg?w=1400',
+'https://chaletbachal.files.wordpress.com/2013/12/p1020051.jpg?w=1400',
 ]
 
 Section.find_each do |section|
-  next if section.position == 1
+  next if section.position == 1 || section == Section.last
   section.photo_urls = urls
 end
 
