@@ -30,9 +30,7 @@ section_params = [
 
           Pour un séjour en famille nombreuse ou entre amis, tout est mis en oeuvre pour que vous vous y sentiez chez vous.
 
-          Pour les BEBES : une chaise haute, un pot et un lit parapluie sont mis à votre disposition.
-
-          NOUVEAU ! un poêle à bois largement vitré a été installé pour vos soirées d’hiver.",
+          Pour les BEBES : une chaise haute, un pot et un lit parapluie sont mis à votre disposition.",
   },
   {
     title: "Les alentours",
@@ -343,7 +341,7 @@ feature_params = [
   },
   {
     section: Section.all[-3],
-    text: "30' de Serre chevalier"
+    text: "30' de Serre Chevalier"
   },
   {
     section: Section.all[-3],
