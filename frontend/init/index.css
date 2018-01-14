@@ -21,15 +21,15 @@ a:hover {
 
 .btn-primary {
   padding: 12px 24px;
-  background-color: #ceaa75;
+  background-color: #3b6161;
   border-radius: 4px;
   font-size: 18px;
   border: none;
   cursor: pointer;
 }
 
-.btn-primary:hover {
-  background-color: #dbbc8f;
+.btn-primary:hover, .btn-primary:active {
+  background-color: darkslategrey;
 }
 
 .alert {
