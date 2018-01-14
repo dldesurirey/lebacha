@@ -60,3 +60,10 @@
 .dropdown-menu {
   margin: 0.6rem 0 0;
 }
+
+@media only screen
+and (max-width: 1024px)  {
+  .fa-phone {
+    display: none;
+  }
+}
