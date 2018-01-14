@@ -62,13 +62,13 @@ section_params = [
           Les amateurs de ski alpin, pourront facilement se rendre à Montgenèvre et Serre-Chevalier à 30mn de route environ. De grands parkings pourvus de caisses de remontées mécaniques en rendent l’accès facile.",
   },
   {
-    title: "Access",
+    title: "Accèss",
     text: "Le chalet Raphaëlla/le Bacha est situé au fond de la vallée de Névache dans le hameau de Ville Basse, rue du Général Rostolland.
 
           En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
   },
   {
-    title: "Tarifs & disponibilités",
+    title: "Tarifs & dispo.",
     text: "<h3>Automne/hiver</h3>
 
           <ul class='intext'>
