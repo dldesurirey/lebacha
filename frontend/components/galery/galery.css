@@ -1,0 +1,44 @@
+[data-scrolldir="down"] .galery {
+  top: 12px;
+}
+[data-scrolldir="up"] .galery {
+  top: 88px;
+}
+
+.galery {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all .3s ease;
+}
+.thumb {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.lightbox .lb-outerContainer {
+  background: transparent;
+}
+.lightbox .lb-image {
+  border: 4px solid transparent;
+}
+
+@media only screen
+and (max-width: 1024px)  {
+  .galery {
+    position: relative;
+    margin-top: 76px;
+  }
+  [data-scrolldir="down"] .galery {
+    top: auto;
+  }
+  [data-scrolldir="up"] .galery {
+    top: auto;
+  }
+}

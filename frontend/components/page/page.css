@@ -1,5 +1,8 @@
 .page {
-  width: 100vw;
-  margin: 0 auto;
-  overflow: hidden;
+  padding-top: 76px;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
 }

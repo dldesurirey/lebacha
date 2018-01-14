@@ -1,12 +1,47 @@
 <%= c("page") do %>
-  <%= c("navbar") do %>
-    <a href="#comodoties" class="item"><%= t 'pages.home.comodoties' %></a>
-    <a href="#around" class="item"><%= t 'pages.home.around' %></a>
-    <a href="#acces" class="item"><%= t 'pages.home.access' %></a>
-    <a href="#testimonials" class="item"><%= t 'pages.home.testimonials' %></a>
+  <%= c("navbar", sections: @sections) %>
+
+  <%= c("banner") %>
+
+  <%= c("booking") %>
+
+  <% @sections.each do |section| %>
+    <%= c("section", id: "s#{section.id}") do %>
+      <div class="col-xs-10 col-sm-10">
+        <h2 class="h1"><%= section.title %></h2>
+      </div>
+      <div class="col-xs-10 col-md-5">
+        <% section.text.lines.each do |line| %>
+          <p><%= raw line %></p>
+        <% end %>
+      </div>
+      <div class="col-xs-10 col-md-5">
+        <% if section.photos.any? %>
+          <%= c("galery", photos: section.photos, id: "g#{section.id}", thumbs: true) %>
+        <% end %>
+      </div>
+      <% if section.features.any? %>
+        <%= c("features", features: section.features) %>
+      <% end %>
+    <% end %>
   <% end %>
-  <%= c("banner") do %>
-    <%= c("carousel") %>
+
+
+  <%= c("section", id: "testimonials") do %>
+    <div class="col-10">
+      <h2 class="h1 text-center">Témoignages</h2>
+      <div class="row justify-content-center">
+        <% @testimonials.each do |testi| %>
+          <%= c("testimonial", testi: testi) %>
+        <% end %>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#booking" class="btn btn-primary intext">
+        Demande de renseignements
+      </a>
+    </div>
   <% end %>
-  <p>Hello from our first component!</p>
+
+  <%= c("footer", sections: @sections) %>
 <% end %>

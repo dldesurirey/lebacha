@@ -1,0 +1,38 @@
+<div class="booking" id="booking">
+  <div class="container">
+    <h2 class="text-center">Renseignements</h2>
+    <%= simple_form_for(@booking_request) do |f| %>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <%= f.input :start_date,
+              html5: true,
+              label: "Date d'arrivée"  %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= f.input :end_date,
+              html5: true,
+              label: "Date de départ" %>
+        </div>
+        <div class="col-12">
+          <%= f.input :email,
+              required: false,
+              label: "Email",
+              placeholder: "Votre email" %>
+        </div>
+        <div class="col-12">
+          <%= f.input :message,
+              label: "Message",
+              placeholder: "Nombre d'adultes, d'enfants..." %>
+        </div>
+        <div class="col-12">
+          <%= f.input :captcha,
+              label: "Combien font 3 + 1 ?",
+              required: false %>
+        </div>
+        <div class="col-12">
+          <%= f.submit "Envoyer", class: "btn btn-primary btn-block" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
