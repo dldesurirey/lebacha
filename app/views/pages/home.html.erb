@@ -1,12 +1,8 @@
 <%= c("page") do %>
-  <%= c("navbar") do %>
-    <% @sections.each do |section| %>
-      <a href="#s<%= section.id %>" class="item"><%= section.title %></a>
-    <% end %>
-    <a href="#testimonials" class="item">Témoignages</a>
-  <% end %>
+  <%= c("navbar", sections: @sections) %>
 
   <%= c("banner") %>
+
   <%= c("booking") %>
 
   <% @sections.each do |section| %>
@@ -39,6 +35,12 @@
           <%= c("testimonial", testi: testi) %>
         <% end %>
       </div>
+    </div>
+
+    <div class="text-center">
+      <a href="#booking" class="btn btn-primary intext">
+        Demande de renseignements
+      </a>
     </div>
   <% end %>
 <% end %>

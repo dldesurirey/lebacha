@@ -34,7 +34,7 @@
   margin-bottom: 8px;
 }
 .logo:hover {
-  color: #222529; 
+  color: #222529;
 }
 
 .item {
@@ -47,6 +47,16 @@
   text-decoration: none;
 }
 
-i {
+.fa-phone {
   margin-right: 6px;
+}
+
+.fa-bars {
+  margin-right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin: 0.6rem 0 0;
 }

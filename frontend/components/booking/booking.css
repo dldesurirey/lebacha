@@ -23,3 +23,17 @@
 .has-danger input {
   border: 1px solid #DA3849;
 }
+
+@media only screen
+and (max-width: 1024px)  {
+  .booking {
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    right: auto;
+  }
+  .booking .form-inline .form-control {
+    width: 100%;
+  }
+}

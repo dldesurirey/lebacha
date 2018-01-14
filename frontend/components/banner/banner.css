@@ -9,3 +9,11 @@
   display: flex;
   align-items: flex-end;
 }
+
+@media only screen
+and (max-width: 1024px)  {
+  .banner {
+    align-items: center;
+    justify-content: center;
+  }
+}
