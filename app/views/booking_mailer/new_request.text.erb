@@ -1,0 +1,23 @@
+Salut la famille 👋
+Vous avez une nouvelle demande de renseignements pour le Bacha !
+Bisous, Arnaud
+
+--
+
+Demande de Renseignements reçue le <%= @booking_request.created_at.strftime("%d %b %Hh%M") %>
+
+<%= @booking_request.email %>
+
+du <%= @booking_request.start_date ? @booking_request.start_date.strftime("%d/%m/%Y") : "- non renseigné -" %>
+au <%= @booking_request.end_date ? @booking_request.end_date.strftime("%d/%m/%Y") : "- non renseigné -" %>
+
+<% if @booking_request.message.present? %>
+<% @booking_request.message.lines.each do |line| %>
+<%= line %>
+<% end %>
+<% else %>
+- Sans message -
+<% end %>
+
+
+--
