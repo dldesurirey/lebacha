@@ -155,6 +155,10 @@ feature_params = [
   },
   {
     section: Section.all[1],
+    text: "160m²"
+  },
+  {
+    section: Section.all[1],
     text: "4 chambres dont une suite"
   },
   {
