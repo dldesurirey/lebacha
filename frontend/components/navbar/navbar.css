@@ -37,6 +37,13 @@
   color: #222529;
 }
 
+.links {
+  max-width: 780px;
+  height: 1.5rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
 .item {
   margin-left: 24px;
   color: #666;
