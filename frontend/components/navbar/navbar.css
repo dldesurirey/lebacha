@@ -46,11 +46,9 @@
 
 .item {
   margin-left: 24px;
-  color: #666;
   text-decoration: none;
 }
 .item:hover {
-  color: #222529;
   text-decoration: none;
 }
 

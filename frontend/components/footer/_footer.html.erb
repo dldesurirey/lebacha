@@ -1,16 +1,28 @@
 <div class="footer">
   <div class="row justify-content-between">
     <div class="col-xs-12 col-md-3">
+      <p class="h3">Chalet Le Bacha</p>
       <p>
-        <span class="h3">Chalet Le Bacha</span><br>
+        Location de charme 10 personnes<br>
+        au coeur de la vallée de la Clarée<br>
         Ville Basse, 05100 Névache<br>
       </p>
     </div>
-    <div class="col-xs-12 col-md-3">
-      <p>
-        Location de charme 10 personnes<br>
-        au coeur de la vallée de la Clarée.<br>
-      </p>
+    <div class="col-xs-12 col-md-2">
+      <ul class="list-unstyled">
+        <% sections.each do |section| %>
+          <li class="list-item">
+            <a href="#s<%= section.id %>">
+              <%= section.title %>
+            </a>
+          </li>
+        <% end %>
+        <li class="list-item">
+          <a href="#testimonials">
+            Témoignages
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="col-xs-12 col-md-3">
       Laurence de Surirey<br>
@@ -20,8 +32,10 @@
   </div>
   <div class="row justify-content-center">
     <div class="col">
-      <p class="madeby">
-        <!-- <span>2018 Tous droits réservés.</span> -->
+      <p class="madeby float-left">
+        2018 Tous droits réservés.
+      </p>
+      <p class="madeby float-right">
         <span>Fait avec <i class="fa fa-heart"></i> par </span>
         <a href="https://www.twitter.com/adesurirey" target="_blank">
           @adesurirey

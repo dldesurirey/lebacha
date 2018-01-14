@@ -16,6 +16,12 @@ p {
   line-height: 1.5;
 }
 
+a {
+  color: #3b6161;
+}
+a:hover, a:active {
+  color: darkslategrey;
+}
 a:hover {
   text-decoration: none;
 }
