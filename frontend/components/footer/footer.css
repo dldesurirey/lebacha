@@ -3,13 +3,15 @@
   padding: 80px 5.5rem;
   color: #666;
 }
+.footer .h3 {
+  color: #222529;
+}
 
 .madeby {
-  margin-top: 60px;
-  margin-bottom: 30px;
   color: #e3e3e3;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 160px;
+  padding-bottom: 30px;
 }
 .madeby  a {
   color: #e3e3e3;
