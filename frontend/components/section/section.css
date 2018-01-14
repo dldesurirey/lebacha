@@ -28,3 +28,7 @@ ul.intext {
 .btn.intext {
   margin-top: 1rem;
 }
+
+.section strong {
+  color: #222529;
+}
