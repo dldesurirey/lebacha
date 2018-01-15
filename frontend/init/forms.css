@@ -12,6 +12,19 @@
   line-height: 1.5;
 }
 
+.section_photos input {
+  display: none;
+}
+.section_photos label {
+  cursor: pointer;
+  color: #3b6161;
+  font-weight: bold;
+}
+.section_photos label:hover {
+  color: darkslategrey;
+}
+
+
 .tips {
   position: relative;
   margin-top: 100px;

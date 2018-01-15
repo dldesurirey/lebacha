@@ -1,12 +1,8 @@
 <%= simple_form_for(@section) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :position, collection: @positions, label: false, prompt: "Position" %>
-    <%= f.input :title, label: false, placeholder: "Titre" %>
-    <%= f.input :text, label: false, placeholder: "Texte" %>
-    <%= f.input :photos, as: :attachinary %>
-  </div>
+  <%= f.input :position, collection: @positions, label: false, prompt: "Position" %>
+  <%= f.input :title, label: false, placeholder: "Titre" %>
+  <%= f.input :text, label: false, placeholder: "Texte de la section" %>
+  <%= f.input :photos, as: :attachinary, label: "Ajouter des photos" %>
 
   <div class="form-actions text-center">
     <div>
