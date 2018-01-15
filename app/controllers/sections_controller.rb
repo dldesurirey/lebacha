@@ -1,5 +1,6 @@
 class SectionsController < ApplicationController
   before_action :set_section, only: [:show, :edit, :update, :destroy]
+  before_action :set_positions, only: [:new, :edit, :create]
 
   # GET /sections
   def index
@@ -46,13 +47,18 @@ class SectionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_section
-      @section = Section.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def section_params
-      params.require(:section).permit(:title, :text, :position, photos: [])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_section
+    @section = Section.find(params[:id])
+  end
+
+  def set_positions
+    @positions = (1..Section.last.position + 1).to_a
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def section_params
+    params.require(:section).permit(:title, :text, :position, photos: [])
+  end
 end

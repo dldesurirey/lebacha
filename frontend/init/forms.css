@@ -1,0 +1,29 @@
+#section_title {
+  font-size: 2em;
+  font-family: 'Abril Fatface', cursive;
+}
+#section_position {
+  width: 10%;
+}
+#section_text {
+  min-height: 50vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tips {
+  position: relative;
+  margin-top: 100px;
+  padding: 40px;
+  border: 1px solid #ced4da;
+}
+.tips:before {
+  content: 'Mise en forme';
+  position: absolute;
+  top: -24px;
+  left: 45%;
+  padding: 10px;
+  background-color: #f7f5f2;
+  color: #ced4da;
+}
