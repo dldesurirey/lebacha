@@ -36,6 +36,11 @@
 .logo:hover {
   color: #222529;
 }
+.logo sup {
+  top: -1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
 
 .links {
   max-width: 780px;

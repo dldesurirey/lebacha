@@ -1,6 +1,10 @@
-.page {
+.page, .page-admin {
   padding-top: 76px;
   margin: 0;
+}
+.page-admin {
+  background-color: #f7f5f2;
+  min-height: 100vh;
 }
 
 .container-fluid {

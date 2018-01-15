@@ -1,0 +1,10 @@
+<div class="navbar">
+  <div class="left">
+    <%= link_to root_path, class: "logo" do %>
+      Le Bacha <sup>admin</sup>
+    <% end %>
+  </div>
+  <div class="right">
+    <%= link_to "Déconnexion", destroy_admin_session_path, method: :delete %>
+  </div>
+</div>
