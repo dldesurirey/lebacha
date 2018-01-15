@@ -1,8 +1,11 @@
-.page, .page-admin {
-  padding-top: 76px;
+.page, .paeg-admin {
   margin: 0;
 }
+.page {
+  padding-top: 76px;
+}
 .page-admin {
+  padding-top: 120px;
   background-color: #f7f5f2;
   min-height: 100vh;
 }

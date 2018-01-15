@@ -1,0 +1,22 @@
+.table {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.20);
+}
+.table tr:first-child td {
+  border-top: none;
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(0,0,0,.075);
+}
+
+.td-right {
+  text-align: right;
+}
+
+.delete-link {
+  color: #9d9d9d;
+}
+.delete-link:hover, .delete-link:active, .delete-link:focus {
+  color: #dc3545;
+}

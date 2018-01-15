@@ -27,14 +27,15 @@ a:hover {
 }
 
 .btn-primary {
-  padding: 12px 24px;
   background-color: #3b6161 !important;
   border-radius: 4px;
-  font-size: 18px;
   border: none;
   cursor: pointer;
 }
-
+.btn-primary:not(.btn-admin) {
+  padding: 12px 24px;
+  font-size: 18px;
+}
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary.disabled:focus, .btn-primary.disabled:active {
   background-color: darkslategrey !important;
 }

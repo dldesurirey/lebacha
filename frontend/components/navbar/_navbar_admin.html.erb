@@ -1,8 +1,23 @@
 <div class="navbar">
   <div class="left">
+    <div class="dropdown d-block d-lg-none">
+      <a  role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li>
+          <%= link_to "Sections", sections_path, class:"dropdown-item" %>
+        </li>
+      </div>
+    </div>
     <%= link_to root_path, class: "logo" do %>
       Le Bacha <sup>admin</sup>
     <% end %>
+    <div class="d-none d-lg-block">
+      <div class="links">
+        <%= link_to "Sections", sections_path, class:"item" %>
+      </div>
+    </div>
   </div>
   <div class="right">
     <%= link_to "Déconnexion", destroy_admin_session_path, method: :delete %>
