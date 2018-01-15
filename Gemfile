@@ -32,6 +32,7 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
+gem 'cocoon'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

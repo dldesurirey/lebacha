@@ -17,6 +17,8 @@ class Section < ApplicationRecord
   has_many :features, dependent: :destroy
   has_attachments :photos, accept: [:jpg, :jpeg, :png]
 
+  accepts_nested_attributes_for :features, reject_if: :all_blank, allow_destroy: true
+
   validates :title, presence: true, length: { minimum: 2 }
 
   after_validation :set_position, if: :position_undefined?

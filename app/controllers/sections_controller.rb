@@ -14,6 +14,7 @@ class SectionsController < ApplicationController
   # GET /sections/new
   def new
     @section = Section.new
+    @section.features.build
   end
 
   # GET /sections/1/edit
@@ -59,6 +60,10 @@ class SectionsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def section_params
-    params.require(:section).permit(:title, :text, :position, photos: [])
+    params.require(:section).permit(
+      :title, :text, :position,
+      photos: [],
+      features_attributes: [:id, :text, :_destroy]
+    )
   end
 end

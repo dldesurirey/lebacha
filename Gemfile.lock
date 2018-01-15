@@ -53,6 +53,7 @@ GEM
     cloudinary (1.1.7)
       aws_cf_signer
       rest-client
+    cocoon (1.2.11)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -231,6 +232,7 @@ DEPENDENCIES
   attachinary
   byebug
   cloudinary
+  cocoon
   coffee-rails
   devise
   devise-i18n

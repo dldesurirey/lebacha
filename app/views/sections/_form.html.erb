@@ -1,7 +1,15 @@
 <%= simple_form_for(@section) do |f| %>
-  <%= f.input :position, collection: @positions, label: false, prompt: "Position" %>
-  <%= f.input :title, label: false, placeholder: "Titre" %>
+  <%= f.input :position, collection: @positions, label: "Position dans la page", prompt: "Sélectionner" %>
+  <%= f.input :title, label: "Contenu de la section", placeholder: "Titre de la section", required:false %>
   <%= f.input :text, label: false, placeholder: "Texte de la section" %>
+
+  <%= f.simple_fields_for :features do |feature| %>
+    <%= render 'feature_fields', f: feature %>
+    <div class="cocoon-links">
+      <%= link_to_add_association 'Ajouter un point', f, :features %>
+    </div>
+  <% end %>
+
   <%= f.input :photos, as: :attachinary, label: "Ajouter des photos" %>
 
   <div class="form-actions text-center">
