@@ -20,6 +20,7 @@ gem 'figaro'
 # Images
 gem 'cloudinary'
 gem 'attachinary'
+gem 'jquery-fileupload-rails'
 
 # Admin
 gem 'devise'
@@ -27,6 +28,10 @@ gem 'devise-i18n'
 
 # Front
 gem 'simple_form'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

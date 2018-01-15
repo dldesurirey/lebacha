@@ -1,0 +1,20 @@
+.img-previews {
+  /* padding-left: 0; */
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.img-preview {
+  margin-bottom: 20px;
+}
+.attachinary_container a {
+  position: absolute;
+  top: 10px;
+  left: 44%;
+  color: #9d9d9d;
+}
+.attachinary_container a:hover {
+  color: #dc3545;
+}
+.attachinary-input {
+  /* File input style here */
+}
