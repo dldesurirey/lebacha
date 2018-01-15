@@ -18,12 +18,3 @@
   padding: 40px;
   border: 1px solid #ced4da;
 }
-.tips:before {
-  content: 'Mise en forme';
-  position: absolute;
-  top: -24px;
-  left: 45%;
-  padding: 10px;
-  background-color: #f7f5f2;
-  color: #ced4da;
-}

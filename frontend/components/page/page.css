@@ -1,4 +1,4 @@
-.page, .paeg-admin {
+.page, .page-admin {
   margin: 0;
 }
 .page {
@@ -8,9 +8,9 @@
   padding-top: 120px;
   background-color: #f7f5f2;
   min-height: 100vh;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
 }
 
-.container-fluid {
+.page .container-fluid {
   padding: 0;
 }
