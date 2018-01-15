@@ -15,6 +15,8 @@
 class BookingRequest < ApplicationRecord
   EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
 
+  default_scope { order(created_at: :desc) }
+
   validates :email, presence: true, format: { with: EMAIL_REGEXP }
   validates :captcha, presence: true, numericality: true
   validate :check_captcha

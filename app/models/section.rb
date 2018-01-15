@@ -11,7 +11,8 @@
 #
 
 class Section < ApplicationRecord
-  default_scope { order(position: :asc) }
+  scope :ordered, -> { order(position: :asc) }
+  scope :by_update, -> { order(updated_at: :desc) }
 
   has_many :features, dependent: :destroy
   has_attachments :photos, accept: [:jpg, :jpeg, :png]
