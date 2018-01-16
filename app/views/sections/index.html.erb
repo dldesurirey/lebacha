@@ -1,6 +1,6 @@
 <%= c("page_admin") do %>
   <%= c("navbar_admin") %>
-  
+
   <div class="row justify-content-center">
     <div class="col-xs-12 col-md-10">
       <div class="d-flex align-items-center justify-content-between mb-5">
@@ -20,11 +20,17 @@
               </td>
               <td class="td-right">
                 <%= link_to 'Éditer', edit_section_path(section), class:"mr-4" %>
-                <%= link_to 'Supprimer',
-                    section,
-                    method: :delete,
-                    class: "delete-link mr-4",
-                    data: { confirm: "Maman, t'es sur de vouloir supprimer ça ? C'est irréversible." } %>
+                <a tabindex="0"
+                   role="button"
+                   class="delete-link mr-4"
+                   data-toggle="popover"
+                   data-placement="bottom"
+                   data-trigger="focus"
+                   html="true"
+                   data-content="<p>Maman, t'es sur de vouloir supprimer cette section ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/sections/108'>Oui, supprimer définitivement</a>"
+                >
+                  Supprimer
+                </a>
               </td>
             </tr>
           <% end %>
