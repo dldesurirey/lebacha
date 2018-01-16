@@ -17,6 +17,9 @@ gem 'webpacker'
 
 gem 'figaro'
 
+# Emails
+gem 'postmark-rails', '~> 0.15.0'
+
 # Images
 gem 'cloudinary'
 gem 'attachinary'
