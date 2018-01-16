@@ -1,13 +1,23 @@
 .table {
   background-color: white;
 }
-.table tr:first-child td {
+.table .thead-dark th {
+  color: #fff;
+  background-color: #ceaa75;
+  border-color: #ceaa75;
+}
+.table .border-radius {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.table tr:first-child, th:first-child {
   border-top: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .table-hover tbody tr:hover {
   background-color: rgba(59, 97, 97, 0.10);
 }
-
 .td-right {
   text-align: right;
 }

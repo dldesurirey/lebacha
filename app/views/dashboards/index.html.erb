@@ -1,4 +1,105 @@
 <%= c("page_admin") do %>
   <%= c("navbar_admin") %>
-  Dashboard
+
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-10">
+      <div class="d-flex align-items-center justify-content-between mb-5">
+        <h1 class="">Tableau de bord</h1>
+      </div>
+
+      <table class="table table-hover border-radius">
+        <thead class="thead-dark">
+          <tr>
+            <th colspan="4">Dernières demandes d'information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @last_requests.each do |request| %>
+            <tr>
+              <td>
+                <%= l request.created_at, format: :date %>
+              </td>
+              <td>
+                <strong><%= request.email %></strong>
+              </td>
+              <td>
+                <% if request.start_date.blank? && request.end_date.blank? %>
+                  <em>dates non renseignées</em>
+                <% elsif request.start_date.present? && request.end_date.blank? %>
+                  du <%= l request.start_date, format: :default %> au <em>non renseigné</em>
+                <% elsif request.end_date.present? && request.start_date.blank? %>
+                  du <em>non renseigné</em> au <%= l request.end_date, format: :default %>
+                <% else %>
+                  du <%= l request.start_date, format: :default %>
+                  au <%= l request.end_date, format: :default %>
+                <% end %>
+              </td>
+              <td class="td-right">
+                <!-- Button trigger modal -->
+                <a role="button"
+                   data-toggle="modal"
+                   data-target="#modal<%= request.id %>"
+                   class="mr-4">
+                  Voir
+                </a>
+
+                <a tabindex="0"
+                   role="button"
+                   class="delete-link mr-4"
+                   data-toggle="popover"
+                   data-placement="bottom"
+                   data-trigger="focus"
+                   html="true"
+                   data-content="<p>Maman, t'es sur de vouloir supprimer cette demande ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/booking_requests/<%= request.id %>'>Oui, supprimer définitivement</a>"
+                >
+                  Supprimer
+                </a>
+              </td>
+            </tr>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal<%= request.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><%= request.email %></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      <strong>Dates : </strong>
+                      <% if request.start_date.blank? && request.end_date.blank? %>
+                        <em>dates non renseignées</em>
+                      <% elsif request.start_date.present? && request.end_date.blank? %>
+                        du <%= l request.start_date, format: :default %> au <em>non renseigné</em>
+                      <% elsif request.end_date.present? && request.start_date.blank? %>
+                        du <em>non renseigné</em> au <%= l request.end_date, format: :default %>
+                      <% else %>
+                        du <%= l request.start_date, format: :default %>
+                        au <%= l request.end_date, format: :default %>
+                      <% end %>
+                    </p>
+                    <% if request.message.blank? %>
+                      <p><em>La personne n'a pas laissé de message.</em></p>
+                    <% else %>
+                      <% request.message.lines.each do |line| %>
+                        <p><%= line %></p>
+                      <% end %>
+                    <% end %>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">
+                      Fermer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
 <% end %>
