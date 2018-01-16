@@ -19,6 +19,7 @@
                 <strong><%= section.title %></strong>
               </td>
               <td class="td-right">
+                <%= link_to 'Voir', root_path(anchor:"s#{section.id}"), class:"mr-4" %>
                 <%= link_to 'Éditer', edit_section_path(section), class:"mr-4" %>
                 <a tabindex="0"
                    role="button"
