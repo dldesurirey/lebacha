@@ -28,7 +28,7 @@ class TestimonialsController < ApplicationController
   # PATCH/PUT /testimonials/1
   def update
     if @testimonial.update(testimonial_params)
-      redirect_to @testimonial, notice: 'Témoignage mis à jour 👌'
+      redirect_to testimonials_path, notice: 'Témoignage mis à jour 👌'
     else
       render :edit
     end
