@@ -50,7 +50,7 @@ class SectionsController < ApplicationController
   end
 
   def set_positions
-    @positions = (1..Section.last.position + 1).to_a
+    @positions = (1..Section.ordered.last.position + 1).to_a
   end
 
   # Only allow a trusted parameter "white list" through.
