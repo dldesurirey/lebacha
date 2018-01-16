@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.4.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -16,6 +17,9 @@ gem 'puma', '~> 3.7'
 gem 'webpacker'
 
 gem 'figaro'
+
+# Emails
+gem 'postmark-rails', '~> 0.15.0'
 
 # Images
 gem 'cloudinary'
