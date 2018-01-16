@@ -4,7 +4,7 @@ class SectionsController < ApplicationController
 
   # GET /sections
   def index
-    @sections = Section.all
+    @sections = Section.ordered
   end
 
   # GET /sections/1
@@ -26,7 +26,7 @@ class SectionsController < ApplicationController
     @section = Section.new(section_params)
 
     if @section.save
-      redirect_to @section, notice: 'Section crée avec succès.'
+      redirect_to sections_path, notice: 'Section publiée avec succès 🤘'
     else
       render :new
     end
@@ -35,7 +35,7 @@ class SectionsController < ApplicationController
   # PATCH/PUT /sections/1
   def update
     if @section.update(section_params)
-      redirect_to @section, notice: 'Section mise à jour.'
+      redirect_to sections_path, notice: 'Section mise à jour 👌'
     else
       render :edit
     end
@@ -44,7 +44,7 @@ class SectionsController < ApplicationController
   # DELETE /sections/1
   def destroy
     @section.destroy
-    redirect_to sections_url, notice: 'Section supprimée.'
+    redirect_to sections_url, notice: 'Section supprimée 😱'
   end
 
   private
