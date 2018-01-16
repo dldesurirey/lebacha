@@ -32,7 +32,6 @@
   border: 1px solid darkslategrey;
 }
 
-
 .tips {
   position: relative;
   margin-top: 100px;
@@ -68,9 +67,6 @@
 }
 .cocoon-links {
   margin-top: 1rem;
-}
-.add_fields {
-  
 }
 .remove_fields {
   margin-left: 33px;

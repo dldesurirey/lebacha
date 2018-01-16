@@ -5,10 +5,10 @@
 
   <%= f.simple_fields_for :features do |feature| %>
     <%= render 'feature_fields', f: feature %>
-    <div class="cocoon-links">
-      <%= link_to_add_association 'Ajouter un point', f, :features %>
-    </div>
   <% end %>
+  <div class="cocoon-links">
+    <%= link_to_add_association 'Ajouter un point', f, :features %>
+  </div>
 
   <%= f.input :photos, as: :attachinary, label: "Ajouter des photos" %>
 
