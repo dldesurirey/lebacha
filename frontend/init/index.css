@@ -16,10 +16,13 @@ p {
   line-height: 1.5;
 }
 
-a {
+a, button, .btn {
+  cursor: pointer;
+}
+a, .btn-light {
   color: #3b6161;
 }
-a:hover, a:active {
+a:hover, a:active, a:focus, .btn-light:hover, .btn-light:active, .btn-light:focus {
   color: darkslategrey;
 }
 a:hover {
@@ -27,22 +30,24 @@ a:hover {
 }
 
 .btn-primary {
-  padding: 12px 24px;
-  background-color: #3b6161;
+  background-color: #3b6161 !important;
   border-radius: 4px;
-  font-size: 18px;
   border: none;
   cursor: pointer;
 }
-
-.btn-primary:hover, .btn-primary:active {
-  background-color: darkslategrey;
+.btn-primary:not(.btn-admin) {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary.disabled:focus, .btn-primary.disabled:active {
+  background-color: darkslategrey !important;
 }
 
-.alert {
+.alert:not(.alert-info) {
   position: fixed;
   right: 1rem;
   top: 0.7rem;
   padding-right: 50px;
+  max-width: 90%;
   z-index: 1050;
 }

@@ -1,0 +1,15 @@
+.img-previews {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.img-preview {
+  margin-bottom: 20px;
+}
+.attachinary_container a {
+  display: block;
+  margin-top: 10px;
+  color: #9d9d9d;
+}
+.attachinary_container a:hover {
+  color: #dc3545;
+}

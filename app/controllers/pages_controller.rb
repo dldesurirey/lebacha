@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @booking_request = BookingRequest.new
 
-    @sections = Section.all
+    @sections = Section.ordered
     @photos = @sections.collect(&:photos).flatten
 
     @testimonials = Testimonial.all

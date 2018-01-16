@@ -4,11 +4,11 @@
   <div class="row justify-content-center">
     <div class="col-xs-12 col-md-10">
       <div class="d-flex align-items-center justify-content-between mb-4">
-        <h1>Édition | <%= @section.title %></h1>
-        <%= link_to 'Revenir à la liste', sections_path %>
+        <h1>Nouveau témoignage</h1>
+        <%= link_to 'Revenir à la liste', testimonials_path %>
       </div>
 
-      <%= render 'form', section: @section %>
+      <%= render 'form', testimonial: @testimonial %>
     </div>
   </div>
 

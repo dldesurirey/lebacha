@@ -1,14 +1,47 @@
 <%= simple_form_for(@section) do |f| %>
-  <%= f.error_notification %>
+  <%= f.input :position,
+        collection: @positions,
+        label: "Position dans la page",
+        prompt: "Sélectionner" %>
+  <%= f.input :title,
+        label: "Contenu de la section",
+        placeholder: "Titre de la section",
+        required:false %>
+  <%= f.input :text,
+        label: false,
+        placeholder: "Texte de la section" %>
 
-  <div class="form-inputs">
-    <%= f.input :position %>
-    <%= f.input :title %>
-    <%= f.input :text %>
-    <%= f.input :photos, as: :attachinary %>
+  <%= f.simple_fields_for :features do |feature| %>
+    <%= render 'feature_fields', f: feature %>
+  <% end %>
+  <div class="cocoon-links">
+    <%= link_to_add_association 'Ajouter un point à mettre en valeur', f, :features %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <%= f.input :photos, as: :attachinary, label: "Ajouter des photos" %>
+
+  <div class="form-actions text-center">
+    <div>
+      <%= f.submit "Publier la section", class: "btn btn-primary btn-block" %>
+    </div>
+    <div class="mt-4">
+      <%= link_to 'Annuler', sections_path %>
+    </div>
   </div>
 <% end %>
+
+
+<div class="tips text-center">
+  <p>
+    <em>Italic</em> <code>&lt;em&gt;Ton texte ici&lt;/em&gt;</code>
+  </p>
+  <p>
+    <strong>Gras</strong> <code>&lt;strong&gt;Ton texte ici&lt;/strong&gt;</code>
+  </p>
+  <p>
+    <span class="h3">Grand Titre</span> <code>&lt;h3&gt;Ton texte ici&lt;/h3&gt;</code>
+  </p>
+  <p>
+    <span class="h4">Petit Titre</span> <code>&lt;h4&gt;Ton texte ici&lt;/h3&gt;</code>
+  </p>
+</div>

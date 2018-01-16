@@ -1,0 +1,82 @@
+#section_title {
+  font-size: 2em;
+  font-family: 'Abril Fatface', cursive;
+}
+#section_position {
+  width: 20%;
+}
+#section_text {
+  min-height: 50vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#testimonial_content {
+  min-height: 15vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section_photos input {
+  display: none;
+}
+.section_photos label {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  border: 1px solid #3b6161;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: #3b6161;
+  border-radius: 4px;
+}
+.section_photos label:hover {
+  color: darkslategrey;
+  border: 1px solid darkslategrey;
+}
+
+.tips {
+  position: relative;
+  margin-top: 100px;
+  padding: 40px;
+  border: 1px solid #ced4da;
+}
+
+.nested-fields {
+  display: flex;
+  align-items: center;
+}
+.section_features_text {
+  position: relative;
+}
+.section_features_text input {
+  margin-left: 38px;
+}
+.section_features_text:before {
+  content: '\2714';
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  color: #ceaa75;
+}
+
+.nested-fields .form-group {
+  width: 86%;
+  margin-right: 28px;
+  margin-bottom: 0;
+}
+.nested-fields .form-group:not(:first-child) {
+  margin-top: 1rem;
+}
+.cocoon-links {
+  margin-top: 1rem;
+}
+.remove_fields {
+  margin-left: 33px;
+  color: #9d9d9d;
+}
+.remove_fields:hover {
+  color: #dc3545;
+}

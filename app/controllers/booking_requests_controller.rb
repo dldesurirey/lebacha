@@ -1,6 +1,10 @@
 class BookingRequestsController < ApplicationController
   skip_before_action :authenticate_admin!, only: :create
 
+  def index
+    @booking_requests = BookingRequest.all
+  end
+
   def create
     @booking_request = BookingRequest.new(request_params)
     if @booking_request.save
@@ -11,6 +15,12 @@ class BookingRequestsController < ApplicationController
       @testimonials = Testimonial.all
       render 'pages/home'
     end
+  end
+
+  def destroy
+    @booking_request = BookingRequest.find(params[:id])
+    @booking_request.destroy
+    redirect_to booking_requests_path, notice: "Demande d'information supprimée 😱"
   end
 
   private

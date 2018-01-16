@@ -107,7 +107,7 @@ fr:
       already_signed_out: Déconnecté(e).
       new:
         sign_in: Connexion
-      signed_in: Connecté(e) avec succès.
+      signed_in: Salut maman 👋
       signed_out: Déconnecté(e) avec succès.
     shared:
       links:

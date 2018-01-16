@@ -1,0 +1,23 @@
+<%= simple_form_for(@testimonial) do |f| %>
+  <%= f.input :date,
+        label: "Date",
+        html5: true,
+        required: false %>
+  <%= f.input :name,
+        label: "Nom",
+        placeholder: "Jean Michel",
+        required: false %>
+  <%= f.input :content,
+        label: "Texte",
+        placeholder: "Séjour épouvantable, la vallée est moche et les gens sont désagréables !",
+        required: false %>
+
+  <div class="form-actions text-center">
+    <div>
+      <%= f.submit "Publier le témoignage", class: "btn btn-primary btn-block" %>
+    </div>
+    <div class="mt-4">
+      <%= link_to 'Annuler', testimonials_path %>
+    </div>
+  </div>
+<% end %>
