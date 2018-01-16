@@ -6,6 +6,12 @@
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li>
+          <%= link_to "Tableau de bord", dashboards_path, class:"dropdown-item" %>
+        </li>
+        <li>
+          <%= link_to "Demandes d'information", booking_requests_path, class:"dropdown-item" %>
+        </li>
+        <li>
           <%= link_to "Sections", sections_path, class:"dropdown-item" %>
         </li>
         <li>
@@ -18,6 +24,8 @@
     <% end %>
     <div class="d-none d-lg-block">
       <div class="links">
+        <%= link_to "Tableau de bord", dashboards_path, class:"item" %>
+        <%= link_to "Demandes d'information", booking_requests_path, class:"item" %>
         <%= link_to "Sections", sections_path, class:"item" %>
         <%= link_to "Témoignages", testimonials_path, class:"item" %>
       </div>

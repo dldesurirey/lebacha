@@ -16,10 +16,13 @@ p {
   line-height: 1.5;
 }
 
-a {
+a, button, .btn {
+  cursor: pointer;
+}
+a, .btn-light {
   color: #3b6161;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active, a:focus, .btn-light:hover, .btn-light:active, .btn-light:focus {
   color: darkslategrey;
 }
 a:hover {
