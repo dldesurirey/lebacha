@@ -18,8 +18,7 @@ class SectionsController < ApplicationController
   end
 
   # GET /sections/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /sections
   def create
