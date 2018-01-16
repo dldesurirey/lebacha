@@ -7,10 +7,6 @@ class SectionsController < ApplicationController
     @sections = Section.ordered
   end
 
-  # GET /sections/1
-  def show
-  end
-
   # GET /sections/new
   def new
     @section = Section.new

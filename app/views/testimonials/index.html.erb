@@ -4,22 +4,22 @@
   <div class="row justify-content-center">
     <div class="col-xs-12 col-md-10">
       <div class="d-flex align-items-center justify-content-between mb-5">
-        <h1 class="">Sections</h1>
-        <%= link_to 'Créer une section', new_section_path, class: "btn btn-primary btn-admin" %>
+        <h1 class="">Témoignages</h1>
+        <%= link_to 'Créer un témoignage', new_testimonial_path, class: "btn btn-primary btn-admin" %>
       </div>
 
       <table class="table table-hover">
         <tbody>
-          <% @sections.each do |section| %>
+          <% @testimonials.each do |testimonial| %>
             <tr>
               <td>
-                <%= section.position %>
+                <%= l testimonial.date, format: :month %>
               </td>
               <td>
-                <strong><%= section.title %></strong>
+                <strong><%= testimonial.name %></strong>
               </td>
               <td class="td-right">
-                <%= link_to 'Éditer', edit_section_path(section), class:"mr-4" %>
+                <%= link_to 'Éditer', edit_testimonial_path(testimonial), class:"mr-4" %>
                 <a tabindex="0"
                    role="button"
                    class="delete-link mr-4"
@@ -27,7 +27,7 @@
                    data-placement="bottom"
                    data-trigger="focus"
                    html="true"
-                   data-content="<p>Maman, t'es sur de vouloir supprimer cette section ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/sections/<%= section.id %>'>Oui, supprimer définitivement</a>"
+                   data-content="<p>Maman, t'es sur de vouloir supprimer ce témoignage ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/testimonials/<%= testimonial.id %>'>Oui, supprimer définitivement</a>"
                 >
                   Supprimer
                 </a>
