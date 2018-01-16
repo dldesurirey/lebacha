@@ -1,10 +1,16 @@
 .table {
   background-color: white;
+  margin-bottom: 60px;
+  border-color: #f7f5f2;
 }
 .table .thead-dark th {
-  color: #fff;
-  background-color: #ceaa75;
-  border-color: #ceaa75;
+  background-color: white;
+  border-color: #f7f5f2;
+  color: #ceaa75;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 3px solid #e9ecef;
 }
 .table .border-radius {
   border-top-left-radius: 4px;
@@ -14,6 +20,11 @@
   border-top: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 2px solid #f7f5f2;
 }
 .table-hover tbody tr:hover {
   background-color: rgba(59, 97, 97, 0.10);

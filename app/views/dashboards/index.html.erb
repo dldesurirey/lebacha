@@ -11,6 +11,7 @@
         </div>
       </div>
 
+      <!-- Requests -->
       <table class="table table-hover border-radius">
         <thead class="thead-dark">
           <tr>
@@ -61,7 +62,7 @@
               </td>
             </tr>
 
-            <!-- Modal -->
+            <!-- Requests Modal -->
             <div class="modal fade" id="modal<%= request.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -101,6 +102,76 @@
                 </div>
               </div>
             </div>
+          <% end %>
+        </tbody>
+      </table>
+
+      <!-- Sections -->
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th colspan="4">Sections modifiées récemment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @recent_sections.each do |section| %>
+            <tr>
+              <td>
+                <%= l section.updated_at, format: :date %>
+              </td>
+              <td>
+                <strong><%= section.title %></strong>
+              </td>
+              <td class="td-right">
+                <%= link_to 'Éditer', edit_section_path(section), class:"mr-4" %>
+                <a tabindex="0"
+                   role="button"
+                   class="delete-link mr-4"
+                   data-toggle="popover"
+                   data-placement="bottom"
+                   data-trigger="focus"
+                   html="true"
+                   data-content="<p>Maman, t'es sur de vouloir supprimer cette section ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/sections/<%= section.id %>'>Oui, supprimer définitivement</a>"
+                >
+                  Supprimer
+                </a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <!-- Testimonials -->
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th colspan="4">Derniers témoignages ajoutés</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @last_testimonials.each do |testimonial| %>
+            <tr>
+              <td>
+                <%= l testimonial.date, format: :month %>
+              </td>
+              <td>
+                <strong><%= testimonial.name %></strong>
+              </td>
+              <td class="td-right">
+                <%= link_to 'Éditer', edit_testimonial_path(testimonial), class:"mr-4" %>
+                <a tabindex="0"
+                   role="button"
+                   class="delete-link mr-4"
+                   data-toggle="popover"
+                   data-placement="bottom"
+                   data-trigger="focus"
+                   html="true"
+                   data-content="<p>Maman, t'es sur de vouloir supprimer ce témoignage ? <b>C'est irréversible.</b></p> <a class='btn btn-danger btn-xs' rel='nofollow' data-method='delete' href='/testimonials/<%= testimonial.id %>'>Oui, supprimer définitivement</a>"
+                >
+                  Supprimer
+                </a>
+              </td>
+            </tr>
           <% end %>
         </tbody>
       </table>
