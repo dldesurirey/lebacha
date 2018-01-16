@@ -8,99 +8,99 @@ section_params = [
     title: "Bienvenue au Bacha",
     text: "Grand chalet mitoyen très confortable, décoré avec charme, situé à 1600 m d'altitude. Location à la semaine, jusqu'à 10 personnes.
 
-          Idéal pour les amoureux de la nature pour lesquels vacances riment avec confort, sport, détente et grands espaces.
+Idéal pour les amoureux de la nature pour lesquels vacances riment avec confort, sport, détente et grands espaces.
 
-          La vallée de la Clarée est réputée pour sa beauté, sa pureté, son ensoleillement, son enneigement et ses activités de pleine nature.
+La vallée de la Clarée est réputée pour sa beauté, sa pureté, son ensoleillement, son enneigement et ses activités de pleine nature.
 
-          Attention, on tombe facilement sous la charme de cette vallée secrète !",
+Attention, on tombe facilement sous la charme de cette vallée secrète !",
   },
   {
     title: "Le duplex",
     text: "Si vous aimez le charme de l’ancien, la nature, l’espace et le calme et que vous tenez à votre confort, ce grand duplex de 160 m² est fait pour vous. Il est aménagé sur deux niveaux dans un grand chalet ancien, l’autre partie étant restée « dans son jus ».
-          Situé dans le hameau de ville basse, en retrait de rue, il est en bordure de prairies, à 10 mn à pied de la boulangerie et à proximité des pistes de ski de fonds.  L’été vous avez la possibilité de faire une randonnée différente chaque jour de  la semaine sans prendre votre voiture.
-          Son grand jardin privatif, orienté vers l’est et son balcon au sud vous permettront de profiter du généreux soleil de Névache.
+Situé dans le hameau de ville basse, en retrait de rue, il est en bordure de prairies, à 10 mn à pied de la boulangerie et à proximité des pistes de ski de fonds.  L’été vous avez la possibilité de faire une randonnée différente chaque jour de  la semaine sans prendre votre voiture.
+Son grand jardin privatif, orienté vers l’est et son balcon au sud vous permettront de profiter du généreux soleil de Névache.
 
-          Son mobilier et sa déco, mélange d’ancien et de moderne, lui donnent un charme certain.
+Son mobilier et sa déco, mélange d’ancien et de moderne, lui donnent un charme certain.
 
-          La literie est neuve ou très récente. Tous les lits sont équipés de couettes douillettes.
+La literie est neuve ou très récente. Tous les lits sont équipés de couettes douillettes.
 
-          Vous avez la possibilité de louer des draps.
+Vous avez la possibilité de louer des draps.
 
-          La maison doit être rendue propre mais une prestation ménage de fin de séjour est possible.
+La maison doit être rendue propre mais une prestation ménage de fin de séjour est possible.
 
-          Nos amis les animaux sont les bienvenus à condition qu’ils soient bien élevés !
+Nos amis les animaux sont les bienvenus à condition qu’ils soient bien élevés !
 
-          Pour un séjour en famille nombreuse ou entre amis, tout est mis en oeuvre pour que vous vous y sentiez chez vous.
+Pour un séjour en famille nombreuse ou entre amis, tout est mis en oeuvre pour que vous vous y sentiez chez vous.
 
-          Pour les BEBES : une chaise haute, un pot et un lit parapluie sont mis à votre disposition.",
+Pour les BEBES : une chaise haute, un pot et un lit parapluie sont mis à votre disposition.",
   },
   {
     title: "Les alentours",
     text: "<h3>En été</h3>
 
-          Vous pourrez pratiquer à Névache où dans les proches environs toutes les activités de montagne que vous aimez (marche, escalade, sports d’eaux-vives, alpinisme, VTT…).
+Vous pourrez pratiquer à Névache où dans les proches environs toutes les activités de montagne que vous aimez (marche, escalade, sports d’eaux-vives, alpinisme, VTT…).
 
-          La vallée est véritablement le paradis de la rando : de la simple balade le long du torrent à l’ascension du mythique Mont Thabor, à plus de 3000 mètres d’altitude, vous aurez l’embarras du choix, ceci le plus souvent en laissant la voiture au parking et loin de foule. En pleine saison un service de navettes assure la liaison avec la haute vallée. Si vous êtes discrets et un peu matinaux vous avez toutes les chances de rencontrer des marmottes (abondantes par endroits), des bouquetins (lac des Béraudes) et des chamois. Si vous vous élevez un peu, la plupart des randos offrent une vue féerique sur le massif des Ecrins.
+La vallée est véritablement le paradis de la rando : de la simple balade le long du torrent à l’ascension du mythique Mont Thabor, à plus de 3000 mètres d’altitude, vous aurez l’embarras du choix, ceci le plus souvent en laissant la voiture au parking et loin de foule. En pleine saison un service de navettes assure la liaison avec la haute vallée. Si vous êtes discrets et un peu matinaux vous avez toutes les chances de rencontrer des marmottes (abondantes par endroits), des bouquetins (lac des Béraudes) et des chamois. Si vous vous élevez un peu, la plupart des randos offrent une vue féerique sur le massif des Ecrins.
 
-          Plusieurs refuges vous accueillent pour un parfum d’aventure.
+Plusieurs refuges vous accueillent pour un parfum d’aventure.
 
-          Vous voulez faire aimer la randonnée à vos enfants ? Louez sur place  un âne ou un lama  de bât, ils en oublieront la fatigue et pourront se reposer en grimpant dessus. Succès garanti !
+Vous voulez faire aimer la randonnée à vos enfants ? Louez sur place  un âne ou un lama  de bât, ils en oublieront la fatigue et pourront se reposer en grimpant dessus. Succès garanti !
 
-          A Briançon, Serre-Chevalier et Montgenèvre, vous pourrez vous délasser et vous amuser dans de belles piscines et des centres aquatiques ou pratiquer l’escalade dans les arbres.
+A Briançon, Serre-Chevalier et Montgenèvre, vous pourrez vous délasser et vous amuser dans de belles piscines et des centres aquatiques ou pratiquer l’escalade dans les arbres.
 
-          Les pêcheurs trouveront leur bonheur dans la Clarée et les nombreux lacs de montagne.
+Les pêcheurs trouveront leur bonheur dans la Clarée et les nombreux lacs de montagne.
 
-          Sur le plan culturel, vous pourrez visiter les villages de Névache et Plampinet avec leurs chalets, leurs chapelles et surtout leurs églises (visites guidées certains jours), mais également la vieille ville de Briançon, voire vous évader pour la journée à Turin, à 1h30 d’autoroute, qui vaut le déplacement.
+Sur le plan culturel, vous pourrez visiter les villages de Névache et Plampinet avec leurs chalets, leurs chapelles et surtout leurs églises (visites guidées certains jours), mais également la vieille ville de Briançon, voire vous évader pour la journée à Turin, à 1h30 d’autoroute, qui vaut le déplacement.
 
-          Enfin si vous aimez simplement le farniente, sachez que le climat de Névache  est très agréable : chaud au soleil, mais  frais à l’ombre et froid la nuit pour un sommeil réparateur.
+Enfin si vous aimez simplement le farniente, sachez que le climat de Névache  est très agréable : chaud au soleil, mais  frais à l’ombre et froid la nuit pour un sommeil réparateur.
 
-          <br>
-          <h3>En hiver</h3>
+<br>
+<h3>En hiver</h3>
 
-          45 km de pistes de ski nordique, promenade en raquettes, ski de randonnée, traîneaux à chien : vous aurez l’embarras du choix pour des sports d’hiver en pleine nature.
+45 km de pistes de ski nordique, promenade en raquettes, ski de randonnée, traîneaux à chien : vous aurez l’embarras du choix pour des sports d’hiver en pleine nature.
 
-          5 refuges restent ouverts en hiver.
+5 refuges restent ouverts en hiver.
 
-          Les amateurs de ski alpin, pourront facilement se rendre à Montgenèvre et Serre-Chevalier à 30mn de route environ. De grands parkings pourvus de caisses de remontées mécaniques en rendent l’accès facile.",
+Les amateurs de ski alpin, pourront facilement se rendre à Montgenèvre et Serre-Chevalier à 30mn de route environ. De grands parkings pourvus de caisses de remontées mécaniques en rendent l’accès facile.",
   },
   {
     title: "Accèss",
     text: "Le chalet Raphaëlla/le Bacha est situé au fond de la vallée de Névache dans le hameau de Ville Basse, rue du Général Rostolland.
 
-          En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
+En arrivant à Ville  Basse, il faut aller au fond de la première venelle en herbe à droite, rue du Général Rostolland, l’entrée en pignon sud se trouve à environ 40 mètres de la route. L’accès en voiture n’est possible qu’avec de petits véhicules car étroit et uniquement pour décharger les bagages. Il est conseillé après avoir déchargé la voiture de se garer sur la petit parking gratuit situé à l’entrée du hameau à une vingtaine de mètres ou sur le grand parking de Ville Haute, également gratuit.",
   },
   {
     title: "Tarifs & dispo.",
     text: "<h3>Automne/hiver</h3>
 
-          <ul class='intext'>
-            <li><strong>1 210€</strong> en haute saison (vacances scolaires Noël et hiver)</li>
-            <li><strong>910€</strong> en moyenne et basse saison</li>
-          </ul>
+<ul class='intext'>
+  <li><strong>1 210€</strong> en haute saison (vacances scolaires Noël et hiver)</li>
+  <li><strong>910€</strong> en moyenne et basse saison</li>
+</ul>
 
-          <h3>Printemps/Été</h3>
+<h3>Printemps/Été</h3>
 
-          <ul class='intext'>
-            <li><strong>1 070€</strong> en haute saison (01 juillet au 19 août)</li>
-            <li><strong>810€</strong> en moyenne et basse saison</li>
-          </ul>
+<ul class='intext'>
+  <li><strong>1 070€</strong> en haute saison (01 juillet au 19 août)</li>
+  <li><strong>810€</strong> en moyenne et basse saison</li>
+</ul>
 
-          <h4>Modalités</h4>
+<h4>Modalités</h4>
 
-          <ul class='intext'>
-            <li>Taxe de séjour de 0.46€ par personne et par jour.</li>
-            <li>Accompte 20% à la réservation, le solde à l’arrivée.</li>
-            <li>Chèque de caution de 1 000€ demandé à l’arrivée (non encaissé).</li>
-          </ul>
+<ul class='intext'>
+  <li>Taxe de séjour de 0.46€ par personne et par jour.</li>
+  <li>Accompte 20% à la réservation, le solde à l’arrivée.</li>
+  <li>Chèque de caution de 1 000€ demandé à l’arrivée (non encaissé).</li>
+</ul>
 
-          <h4>Services</h4>
+<h4>Services</h4>
 
-          <ul class='intext'>
-            <li>Location de draps:  10€</li>
-            <li>Ménage de fin de séjour: 90€</li>
-          </ul>
+<ul class='intext'>
+  <li>Location de draps:  10€</li>
+  <li>Ménage de fin de séjour: 90€</li>
+</ul>
 
-          <a class='btn btn-primary intext' target='_blank' href='http://locations-meubles.nevache-tourisme.fr/fr/rentals/46183-desurirey-laurence-le-bacha-a-ville-basse?guests=10'>Consulter les disponibilités</a>",
+<a class='btn btn-primary intext' target='_blank' href='http://locations-meubles.nevache-tourisme.fr/fr/rentals/46183-desurirey-laurence-le-bacha-a-ville-basse?guests=10'>Consulter les disponibilités</a>",
   },
 ]
 
@@ -360,18 +360,18 @@ testimonial_params = [
     name: "Brigitte, Anne, Véro, Cathy, Bruno, Pierre B., Pierre R. & Jean Marc",
     content: "Nous voici de retour à Montpellier après avoir passé une semaine formidable dans votre chalet le bacha.
 
-            Nous avons eu une semaine ensoleillée qui nous a permis de randonner tous les jours avec la cerise  sur le gâteau le  dernier jour par l’ascension du mont Thabor.
+Nous avons eu une semaine ensoleillée qui nous a permis de randonner tous les jours avec la cerise  sur le gâteau le  dernier jour par l’ascension du mont Thabor.
 
-            Nous tenons à vous signaler également que nous avons apprécié le chalet, nous l’avons trouvé bien agencé, très convivial avec sa grande pièce à vivre où nous prenions nos petits déjeuners et repas du soir : tout y était !!! ",
+Nous tenons à vous signaler également que nous avons apprécié le chalet, nous l’avons trouvé bien agencé, très convivial avec sa grande pièce à vivre où nous prenions nos petits déjeuners et repas du soir : tout y était !!! ",
     date: Date.parse('31/07/2016'),
   },
   {
     name: "Nicolas",
     content: "Ce séjour s’est très bien passé… neige et soleil étaient là.
 
-            Le choix que j’ai fait de votre maison a été parfait. Remerciez Chloé Guellerin pour son efficacité et sa gentillesse
+Le choix que j’ai fait de votre maison a été parfait. Remerciez Chloé Guellerin pour son efficacité et sa gentillesse
 
-            A Bientôt peut être pour un autre séjour.",
+A Bientôt peut être pour un autre séjour.",
     date: Date.parse('16/03/2017'),
   },
   {
@@ -382,7 +382,7 @@ testimonial_params = [
   {
     name: "Damien",
     content: "Chalet très très agréable, bien installé et paysage superbe
-              Merci bcp",
+Merci bcp",
     date: Date.parse('11/08/2014'),
   },
   {
