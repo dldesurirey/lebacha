@@ -22,14 +22,23 @@ class Section < ApplicationRecord
   validates :title, presence: true, length: { minimum: 2 }
 
   after_validation :set_position, if: :position_undefined?
+  after_validation :move_positions, if: :position_conflict?
+
+  private
 
   def position_undefined?
     position.nil?
   end
 
-  private
-
   def set_position
     self.position = Section.count < 1 ? 1 : Section.last.position + 1
+  end
+
+  def position_conflict?
+    Section.where(position: position).any?
+  end
+
+  def move_positions
+    Section.where("position >= ?", position).each { |s| s.increment!(:position) }
   end
 end
