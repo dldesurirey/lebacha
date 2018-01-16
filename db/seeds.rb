@@ -6,7 +6,9 @@ BookingRequest.destroy_all
 section_params = [
   {
     title: "Bienvenue au Bacha",
-    text: "Idéal pour les amoureux de la nature pour lesquels vacances riment avec confort, sport, détente et grands espaces.
+    text: "Grand chalet mitoyen très confortable, décoré avec charme, situé à 1600 m d'altitude. Location à la semaine, jusqu'à 10 personnes.
+
+          Idéal pour les amoureux de la nature pour lesquels vacances riment avec confort, sport, détente et grands espaces.
 
           La vallée de la Clarée est réputée pour sa beauté, sa pureté, son ensoleillement, son enneigement et ses activités de pleine nature.
 
