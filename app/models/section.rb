@@ -31,7 +31,7 @@ class Section < ApplicationRecord
   end
 
   def set_position
-    self.position = Section.count < 1 ? 1 : Section.last.position + 1
+    self.position = Section.count < 1 ? 1 : Section.ordered.last.position + 1
   end
 
   def position_conflict?
