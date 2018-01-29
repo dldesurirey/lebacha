@@ -27,13 +27,16 @@ and (max-width: 700px)  {
   }
 
   .madeby:first-child {
-    padding-top: 20px;
+    padding-top: 80px;
   }
   .madeby:last-child {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .madeby {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .float-left, .float-right {
+    float: initial !important;
   }
 }
