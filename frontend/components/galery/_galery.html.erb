@@ -17,7 +17,11 @@
       <% if !thumbs && counter == 1  %>
         Voir les photos
       <% elsif thumbs %>
-        <%= cl_image_tag photo.path, width: 150, crop: :fill, class: "thumb" %>
+        <%= cl_image_tag photo.path,
+              width: 150,
+              height: 113,
+              crop: :fill,
+              class: "thumb" %>
       <% end %>
     </a>
   <% end %>

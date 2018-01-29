@@ -21,6 +21,9 @@
 .thumb:hover {
   transform: scale(1.05);
 }
+.galery img {
+  cursor: zoom-in;
+}
 
 .lightbox .lb-outerContainer {
   background: transparent;
