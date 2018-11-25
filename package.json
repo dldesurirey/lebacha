@@ -2,10 +2,9 @@
   "name": "lebacha",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.2.0",
+    "@rails/webpacker": "^3.5.5",
     "lightbox2": "^2.10.0",
     "normalize.css": "^7.0.0",
-    "postcss-nested": "^3.0.0",
     "rails-ujs": "^5.1.4",
     "scrolldir": "^1.2.18"
   },
@@ -18,9 +17,10 @@
     "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.4.0",
+    "postcss-nested": "^4.1.0",
     "prettier": "^1.9.2",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.11.1"
   }
 }

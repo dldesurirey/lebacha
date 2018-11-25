@@ -1,4 +1,4 @@
-.check :before {
+.check::before {
   content: '✔';
   margin-right: 16px;
   color: #ceaa75;

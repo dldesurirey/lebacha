@@ -8,7 +8,14 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -16,15 +23,26 @@ p {
   line-height: 1.5;
 }
 
-a, button, .btn {
+a,
+button,
+.btn {
   cursor: pointer;
 }
-a, .btn-light {
+
+a,
+.btn-light {
   color: #3b6161;
 }
-a:hover, a:active, a:focus, .btn-light:hover, .btn-light:active, .btn-light:focus {
+
+a:hover,
+a:active,
+a:focus,
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus {
   color: darkslategrey;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -35,11 +53,17 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+
 .btn-primary:not(.btn-admin) {
   padding: 12px 24px;
   font-size: 18px;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary.disabled:focus, .btn-primary.disabled:active {
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active {
   background-color: darkslategrey !important;
 }
 

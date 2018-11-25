@@ -1,12 +1,3 @@
-[data-scrolldir="down"] .navbar {
-  top: -76px;
-  left: 0;
-}
-[data-scrolldir="up"] .navbar {
-  top: 0;
-  left: 0;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -19,7 +10,17 @@
   background-color: white;
   color: #666;
   z-index: 1000;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
+}
+
+[data-scrolldir="down"] .navbar {
+  top: -76px;
+  left: 0;
+}
+
+[data-scrolldir="up"] .navbar {
+  top: 0;
+  left: 0;
 }
 
 .left {
@@ -33,9 +34,11 @@
   font-size: 32px;
   margin-bottom: 8px;
 }
+
 .logo:hover {
   color: #222529;
 }
+
 .logo sup {
   top: -1.5em;
   font-family: 'Open Sans', sans-serif;
@@ -53,6 +56,7 @@
   margin-left: 24px;
   text-decoration: none;
 }
+
 .item:hover {
   text-decoration: none;
 }
@@ -72,7 +76,7 @@
 }
 
 @media only screen
-and (max-width: 1024px)  {
+  and (max-width: 1024px) {
   .fa-phone {
     display: none;
   }

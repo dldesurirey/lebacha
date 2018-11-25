@@ -3,6 +3,7 @@
   padding: 80px 5.5rem;
   color: #666;
 }
+
 .footer .h3 {
   color: #222529;
 }
@@ -13,30 +14,37 @@
   padding-top: 140px;
   padding-bottom: 30px;
 }
-.madeby  a {
+
+.madeby a {
   color: #e3e3e3;
 }
-.madeby  a:hover, a:active {
+
+.madeby a:hover,
+.madeby a:active {
   color: #666;
 }
 
 @media only screen
-and (max-width: 700px)  {
+  and (max-width: 700px) {
   .footer {
     padding: 80px 2rem;
+  }
+
+  .madeby {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .madeby:first-child {
     padding-top: 80px;
   }
+
   .madeby:last-child {
     padding-bottom: 20px;
   }
-  .madeby {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .float-left, .float-right {
+
+  .float-left,
+  .float-right {
     float: initial !important;
   }
 }
