@@ -2,7 +2,7 @@
   "name": "lebacha",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.2.0",
+    "@rails/webpacker": "^3.5.5",
     "lightbox2": "^2.10.0",
     "normalize.css": "^7.0.0",
     "postcss-nested": "^3.0.0",
