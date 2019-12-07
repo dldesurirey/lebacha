@@ -1,1 +1,1 @@
-import "./section.css";
+import './section.css';

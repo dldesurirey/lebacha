@@ -4,23 +4,24 @@
   "dependencies": {
     "@rails/webpacker": "^3.5.5",
     "lightbox2": "^2.10.0",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.1",
     "postcss-nested": "^4.1.0",
     "rails-ujs": "^5.1.4",
     "scrolldir": "^1.2.18"
   },
   "devDependencies": {
-    "babel-eslint": "^8.1.1",
-    "coffeescript": "1.12.7",
-    "eslint": "^4.14.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
+    "babel-eslint": "^10.0.3",
+    "coffeescript": "2.4.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.9.2",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0",
     "webpack-dev-server": "^2.11.1"
+  },
+  "scripts": {
+    "lint": "eslint --ext js,jsx config/webpack frontend/"
   }
 }

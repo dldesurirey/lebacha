@@ -1,1 +1,1 @@
-import "./booking.css";
+import './booking.css';

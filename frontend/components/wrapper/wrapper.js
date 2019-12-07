@@ -1,1 +1,1 @@
-import "./wrapper.css";
+import './wrapper.css';
