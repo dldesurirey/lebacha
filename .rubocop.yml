@@ -1,5 +1,7 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
   Include:
     - '**/Rakefile'
     - '**/config.ru'
@@ -10,7 +12,6 @@ AllCops:
     - 'script/**/*'
     - 'bin/**/*'
     - !ruby/regexp /old_and_unused\.rb$/
-    - 'app/admin/*'
     - 'tmp/*'
     - Guardfile
     - Gemfile
@@ -18,64 +19,3 @@ AllCops:
 
 Documentation:
   Enabled: false
-
-FrozenStringLiteralComment:
-  Enabled: false
-
-ClassAndModuleChildren:
-  Enabled: false
-
-Metrics/BlockLength:
-  Enabled: true
-  Exclude:
-    - lib/tasks/**/*
-
-
-AsciiComments:
-  Enabled: false
-
-AlignParameters:
-  Enabled: false
-
-Lint/EndAlignment:
-  Enabled: true
-  EnforcedStyleAlignWith: variable
-
-Metrics/LineLength:
-  Max: 100
-
-Style/BlockDelimiters:
-  EnforcedStyle: semantic
-
-Style/Lambda:
-  Enabled: false
-
-Style/SignalException:
-  EnforcedStyle: semantic
-
-Style/NumericLiteralPrefix:
-  Enabled: false
-
-Style/NumericLiterals:
-  Enabled: false
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-Style/SymbolArray:
-  Enabled: false
-
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: comma
-  Exclude:
-    - test/**/*
-
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
-  Exclude:
-    - test/**/*
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
-  Exclude:
-    - test/**/*
