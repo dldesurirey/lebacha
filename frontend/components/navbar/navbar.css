@@ -13,6 +13,10 @@
   transition: all 0.3s ease;
 }
 
+.navbar h1 {
+  margin: 0;
+}
+
 [data-scrolldir="down"] .navbar {
   top: -76px;
   left: 0;
