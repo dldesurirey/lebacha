@@ -1,1 +1,1 @@
-import "./navbar.css";
+import './navbar.css';

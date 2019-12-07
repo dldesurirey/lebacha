@@ -1,1 +1,1 @@
-import "./banner.css";
+import './banner.css';

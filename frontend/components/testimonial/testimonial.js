@@ -1,1 +1,1 @@
-import "./testimonial.css";
+import './testimonial.css';
