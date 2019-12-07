@@ -4,7 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "^3.5.5",
     "lightbox2": "^2.10.0",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.1",
     "postcss-nested": "^4.1.0",
     "rails-ujs": "^5.1.4",
     "scrolldir": "^1.2.18"
